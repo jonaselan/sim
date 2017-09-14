@@ -1,11 +1,10 @@
 require "spec_helper"
 
 describe Sim do
-  it "has a version number" do
-    expect(Sim::VERSION).not_to be nil
-  end
 
-  it "does something useful" do
-    expect(false).to eq(true)
+  describe 'String' do
+    it "Change the J by G in a string" do
+      expect(Sim::String.new('jonas joca').sub_string).to eq('gonas goca')
+    end
   end
 end
